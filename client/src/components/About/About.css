@@ -1,0 +1,60 @@
+.skillsImg {
+  width: 70px;
+  height: 70px;
+}
+
+.imgContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.cVContainer {
+  padding: 1rem;
+  margin-bottom: 40px;
+}
+
+.skillContainer {
+  padding: 3rem 3rem 0 3rem;
+}
+
+.skillContainer h5 {
+  font-weight: 600;
+  text-align: center;
+  font-size: 18px;
+}
+
+.skillsTitle {
+  font-weight: 700;
+  font-size: 25px;
+  margin: 0;
+}
+
+.presentation {
+  padding: 1rem 20rem;
+  text-align: start;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.softSkills {
+  margin-top: 50px;
+}

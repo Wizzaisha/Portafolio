@@ -1,0 +1,68 @@
+.navBar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.titleContainer {
+  text-align: start;
+  padding: 0.5rem 3rem;
+}
+
+.mainTitle {
+  margin-bottom: 0;
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
+}
+
+.subTitle {
+  margin: 0.5rem 1rem;
+}
+
+.navBarContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 2rem;
+  padding: 0;
+}
+
+.radiusLeft {
+  border-radius: 10px 0 0 10px;
+}
+
+.radiusRight {
+  border-radius: 0 10px 10px 0;
+}
+
+.linkNavBar {
+  width: 130px;
+  background-color: #333;
+}
+
+.linkNavBar {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: white;
+}
+
+.linkNavBar:hover:not(.active) {
+  background-color: #111;
+  color: white;
+}
+
+.linkNavBar:hover {
+  color: white;
+}
+
+.active {
+  background-color: #04aa6d;
+}
