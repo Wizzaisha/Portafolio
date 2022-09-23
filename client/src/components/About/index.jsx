@@ -1,5 +1,7 @@
 import "./About.css";
-
+import { GiTeamIdea, GiSandsOfTime, GiAnvilImpact } from "react-icons/gi";
+import { FcReadingEbook, FcIdea } from "react-icons/fc";
+import cvPdf from "../../Pdf/cv.pdf";
 
 function About () {
 
@@ -7,19 +9,25 @@ function About () {
     return (
         <div className="container-fluid">
             <div className="row">
+                
+                
                 <div className="presentation">
                     <img src="https://avatars.githubusercontent.com/u/86801763?v=4" alt="img" className="picture" />
-                    <p>
-                        Soy Ingeniero Ambiental y Desarrollador Full Stack; me apasiona el 
-                        mundo de la tecnología, la programación y aprender cosas nuevas. 
-                        Tengo experencia como Freelancer en el área de educación no formal; 
-                        tambíen he desarrollado proyectos de aplicaciones Web sobre e-commerce
-                        y de uso de APIs como RAWG.
-                    </p>
+                    <div>
+                        <h3 className="miniTitle">Hola! o7</h3>
+                        <p>
+                            Soy Ingeniero Ambiental y Desarrollador Full Stack; me apasiona el 
+                            mundo de la tecnología, la programación y aprender cosas nuevas. 
+                            Tengo experencia como Freelancer en el área de educación no formal; 
+                            tambíen he desarrollado proyectos de aplicaciones Web sobre e-commerce
+                            y de uso de APIs como RAWG.
+                        </p>
+                    </div>
+
                 </div>
+                
                 <div className="cVContainer">
-                    <button>Ver CV</button>
-                    <button>Descargar CV</button>
+                    <a href={cvPdf} target="_blank" rel="noopener noreferrer" className="pdfLink"><button className="cvButton">Ver CV</button></a>
                 </div>
             </div>
             <div className="tecSkills">
@@ -71,7 +79,7 @@ function About () {
                     <div className="skillContainer">
                         <h5>Otras</h5>
                         <div className="imgContainer">
-                            <p>GitHub</p>
+                            <p><a href="https://github.com/" target="_blank" rel="noopener noreferrer"><img src="/assets/images/GitHub-Mark-120px-plus.png" alt="github" className="skillsImg"/></a></p>
                             <p>Metodología agile SCRUM</p>
                         </div>
                     </div>
@@ -83,18 +91,23 @@ function About () {
                 <div className="skills">
                     <div className="skillContainer">
                         <h5>Trabajo en equipo</h5>
+                        <GiTeamIdea className="skillsImg"/>
                     </div>
                     <div className="skillContainer">
                         <h5>Trabajo autónomo</h5>
+                        <FcReadingEbook className="skillsImg"/>
                     </div>
                     <div className="skillContainer">
                         <h5>Gestión del timpo</h5>
+                        <GiSandsOfTime className="skillsImg" />
                     </div>
                     <div className="skillContainer">
                         <h5>Innovación</h5>
+                        <FcIdea className="skillsImg" />
                     </div>
                     <div className="skillContainer">
                         <h5>Adaptabilidad</h5>
+                        <GiAnvilImpact className="skillsImg" />
                     </div>
                 </div>
             </div>

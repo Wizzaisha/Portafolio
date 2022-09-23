@@ -3,21 +3,46 @@
   height: 70px;
 }
 
+.miniTitle {
+  margin-bottom: 30px;
+}
+
+.pdfLink {
+  text-decoration: none;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+.pdfLink button {
+  padding: 1rem 2rem;
+}
+
+.pdfLink:hover {
+  color: inherit;
+}
+
 .imgContainer {
   display: flex;
   flex-direction: row;
   gap: 3rem;
   justify-content: center;
+  align-items: center;
   margin-top: 30px;
+}
+
+.container-fluid {
+  padding: 0.1rem;
+  margin: 0;
 }
 
 .cVContainer {
   padding: 1rem;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .skillContainer {
-  padding: 3rem 3rem 0 3rem;
+  padding: 3rem 3rem 0 1rem;
 }
 
 .skillContainer h5 {
@@ -56,5 +81,30 @@
 }
 
 .softSkills {
-  margin-top: 50px;
+  margin: 0;
+  margin-top: 10px;
+  background-color: #f66b0e11;
+  border: 1px solid #f66b0e;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.tecSkills {
+  background-color: #59ce901a;
+  border: 1px solid #59ce8f;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 0;
+}
+
+.cvButton {
+  background-color: #59ce8f;
+  border: #59ce8f;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+}
+
+.cvButton:hover {
+  background-color: black;
 }

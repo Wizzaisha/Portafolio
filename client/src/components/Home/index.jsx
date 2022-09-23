@@ -11,7 +11,7 @@ function Home () {
 
             <Header />
 
-            <div>
+            <div className="card contentContainer">
                 <Outlet />
             </div>
 

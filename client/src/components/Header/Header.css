@@ -9,6 +9,12 @@
   justify-content: flex-end;
 }
 
+.headerContainer {
+  background-color: #205375;
+  padding: 1.2rem;
+  color: white;
+}
+
 .titleContainer {
   text-align: start;
   padding: 0.5rem 3rem;
@@ -21,7 +27,7 @@
 }
 
 .subTitle {
-  margin: 0.5rem 1rem;
+  margin-top: 10px;
 }
 
 .navBarContainer {
@@ -43,7 +49,7 @@
 
 .linkNavBar {
   width: 130px;
-  background-color: #333;
+  background-color: #59ce8f;
 }
 
 .linkNavBar {
@@ -64,5 +70,5 @@
 }
 
 .active {
-  background-color: #04aa6d;
+  background-color: black;
 }
