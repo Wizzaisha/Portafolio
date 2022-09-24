@@ -7,13 +7,6 @@
   margin-bottom: 30px;
 }
 
-.pdfLink {
-  text-decoration: none;
-  color: inherit;
-  padding: 0;
-  margin: 0;
-}
-
 .pdfLink button {
   padding: 1rem 2rem;
 }
@@ -95,16 +88,4 @@
   border-radius: 10px;
   padding: 1rem;
   margin: 0;
-}
-
-.cvButton {
-  background-color: #59ce8f;
-  border: #59ce8f;
-  border-radius: 10px;
-  color: white;
-  font-weight: 700;
-}
-
-.cvButton:hover {
-  background-color: black;
 }

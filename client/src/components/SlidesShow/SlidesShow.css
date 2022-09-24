@@ -1,0 +1,83 @@
+.leftArrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 32px;
+  font-size: 45px;
+  color: #59ce8f;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.righttArrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 32px;
+  font-size: 45px;
+  color: #59ce8f;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.leftArrow:hover,
+.righttArrow:hover {
+  color: black;
+}
+
+.containerSlides {
+  position: relative;
+}
+
+.dotsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px;
+  position: relative;
+}
+
+.slideImg {
+  border-radius: 10px;
+}
+
+.righttArrowGallery {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 10px;
+  font-size: 45px;
+  color: #59ce8f;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.leftArrowGallery {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 10px;
+  font-size: 45px;
+  color: #59ce8f;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.leftArrowGallery:hover,
+.righttArrowGallery:hover {
+  color: black;
+}
+
+.galleryImg {
+  width: 220px;
+}
+
+.galleryImg {
+  cursor: pointer;
+  border: 0.1px solid black;
+}
+
+.galleryImg:hover {
+  background-color: white;
+  opacity: 0.5;
+}

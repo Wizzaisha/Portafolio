@@ -1,7 +1,6 @@
 import "./About.css";
 import { GiTeamIdea, GiSandsOfTime, GiAnvilImpact } from "react-icons/gi";
 import { FcReadingEbook, FcIdea } from "react-icons/fc";
-import cvPdf from "../../Pdf/cv.pdf";
 
 function About () {
 
@@ -14,7 +13,7 @@ function About () {
                 <div className="presentation">
                     <img src="https://avatars.githubusercontent.com/u/86801763?v=4" alt="img" className="picture" />
                     <div>
-                        <h3 className="miniTitle">Hola! o7</h3>
+                        <h3 className="miniTitle">Detalles sobre mi</h3>
                         <p>
                             Soy Ingeniero Ambiental y Desarrollador Full Stack; me apasiona el 
                             mundo de la tecnología, la programación y aprender cosas nuevas. 
@@ -25,10 +24,7 @@ function About () {
                     </div>
 
                 </div>
-                
-                <div className="cVContainer">
-                    <a href={cvPdf} target="_blank" rel="noopener noreferrer" className="pdfLink"><button className="cvButton">Ver CV</button></a>
-                </div>
+            
             </div>
             <div className="tecSkills">
                 <h3 className="skillsTitle">Habilidades técnicas</h3>

@@ -1,9 +1,0 @@
-.footerContainer {
-  height: 100px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  background-color: #205375;
-  color: white;
-}

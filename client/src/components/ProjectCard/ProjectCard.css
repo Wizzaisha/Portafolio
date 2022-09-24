@@ -1,0 +1,40 @@
+.projectCard {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.carHeader {
+  border-bottom: 1px solid black;
+  padding: 1rem;
+  margin: 0;
+}
+
+.imagesAndFunctionalities {
+  text-align: left;
+}
+
+.functionalitiesAndLinks {
+  border-right: 1px solid black;
+  padding: 1rem;
+}
+
+.functionalities h5 {
+  text-align: center;
+  font-weight: 700;
+}
+
+.projectImgsContainer {
+  padding: 1rem;
+}
+
+.interestLinks {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.listFunct {
+  padding: 0.1rem 1rem;
+  margin: 0;
+  font-size: 15px;
+}
