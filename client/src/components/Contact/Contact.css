@@ -1,0 +1,33 @@
+.formContainer {
+  background-color: #59ce901a;
+  padding: 1rem;
+  border: 2px solid white;
+}
+
+.formInput {
+  padding: 0.5rem;
+}
+
+.greetingsContainer {
+  height: 70vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.greetingsContainer h4 {
+  font-size: 40px;
+  padding: 1rem;
+  font-weight: 700;
+}
+
+.greetingsContainer p {
+  font-size: 20px;
+  padding: 1rem;
+}
+
+.greetingsContainer button {
+  padding: 1rem 2rem;
+}

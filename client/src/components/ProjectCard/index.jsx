@@ -1,15 +1,65 @@
 import "./ProjectCard.css";
-import { SiHeroku, SiVercel } from "react-icons/si";
+import { 
+    SiHeroku, 
+    SiVercel, 
+    SiJavascript, 
+    SiReact, 
+    SiExpress, 
+    SiCss3, 
+    SiHtml5,
+    SiPostgresql,
+    SiBootstrap,
+    SiTrello,
+    SiDjango,
+    SiFlask,
+    SiVuedotjs,
+} from "react-icons/si";
+import { AiFillGithub } from "react-icons/ai";
+import { FiSettings } from "react-icons/fi";
+import { FaNode } from "react-icons/fa";
 import SlidesShow from "../SlidesShow";
 
 function ProjectCard(props) {
+
+    function getIcon (name, style) {
+        switch (name) {
+            case "javascript":
+                return <SiJavascript className={style}/>;
+            case "react":
+                return <SiReact className={style}/>
+            case "node":
+                return <FaNode className={style}/>
+            case "express":
+                return <SiExpress className={style}/>
+            case "css":
+                return <SiCss3 className={style}/>
+            case "html":
+                return <SiHtml5 className={style}/>
+            case "postgresql":
+                return <SiPostgresql className={style}/>
+            case "bootstrap":
+                return <SiBootstrap className={style}/>
+            case "Trello":
+                return <SiTrello className={style}/>
+            case "GitHub":
+                return <AiFillGithub className={style}/>
+            case "django":
+                return <SiDjango className={style}/>
+            case "flask":
+                return <SiFlask className={style}/>
+            case "vuejs":
+                return <SiVuedotjs className={style}/>
+            default:
+                return name;
+        }
+    }
 
     return (
         <div className="container-fluid">
             {props.project && 
                 <div key={props.project.id} className="card projectCard row">
                     <div className="carHeader">
-                        <h3>{props.project.title}</h3>
+                        <h3>{<FiSettings />} {props.project.title}</h3>
                         <p>{props.project.description}</p>
                     </div>
 
@@ -27,15 +77,15 @@ function ProjectCard(props) {
                             </div>
                             <div className="interestLinks">
                                 <div>
-                                    <p>Repositorio</p>
-                                    <a href={props.project.repository} target="_blank" rel="noopener noreferrer"><img src="/assets/images/GitHub-Mark-120px-plus.png" alt="repo"></img></a>
+                                    <p><b>Repositorio</b></p>
+                                    <a href={props.project.repository} target="_blank" rel="noopener noreferrer"><AiFillGithub className="linksIcons" /></a>
                                 </div>
                                 <div>
                                     {props.project.deployBack.length > 0 
                                         ?
                                             <div>
-                                                <p>Deploy del Back</p>
-                                                <a href={props.project.deployBack} target="_blank" rel="noopener noreferrer"><SiHeroku /></a>
+                                                <p><b>Deploy del Back</b></p>
+                                                <a href={props.project.deployBack} target="_blank" rel="noopener noreferrer"><SiHeroku className="linksIcons"/></a>
                                             </div>
                                         :   null
                                     }
@@ -44,8 +94,8 @@ function ProjectCard(props) {
                                     {props.project.deployFront.length > 0 
                                         ?
                                             <div>
-                                                <p>Deploy del Front</p>
-                                                <a href={props.project.deployFront} target="_blank" rel="noopener noreferrer"><SiVercel /></a>
+                                                <p><b>Deploy del Front</b></p>
+                                                <a href={props.project.deployFront} target="_blank" rel="noopener noreferrer"><SiVercel className="linksIcons"/></a>
                                             </div>
                                         :   null
                                     }
@@ -54,34 +104,38 @@ function ProjectCard(props) {
                         </div>
                         
                         <div className="col col-md-8 projectImgsContainer">
-                            <SlidesShow images={props.project.images}/>
-                        </div>
 
-                    </div>
-                    
-                    <div className="techAndTools">
-                        <div>
-                            <p>Tecnologías</p>
-                            {props.project.technologies && props.project.technologies.map((e, index) => {
-                                return (
-                                    <ul key={index}>
-                                        <li>{e}</li>
-                                    </ul>
-                                )
-                            })}
+                            <div className="slidesContainer">
+                                <SlidesShow images={props.project.images}/>
+                            </div>
+                            <div className="techAndTools">
+                                <div className="extraDiv">
+                                    <p><b>Tecnologías</b></p>
+                                    <div className="techContainer">
+                                        {props.project.technologies && props.project.technologies.map((e, index) => {
+                                            return (
+                                                <ul key={index}>
+                                                    <li>{getIcon(e, "icons")}</li>
+                                                </ul>
+                                            )
+                                        })}
+                                    </div>
+                                </div>
+                                <div className="extraDiv">
+                                    <p><b>Herramientas</b></p>
+                                    <div className="toolsContainer">
+                                        {props.project.tools && props.project.tools.map((e, index) => {
+                                            return (
+                                                <ul key={index}>
+                                                    <li>{getIcon(e, "icons")}</li>
+                                                </ul>
+                                            )
+                                        })}
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <p>Herramientas</p>
-                            {props.project.tools && props.project.tools.map((e, index) => {
-                                return (
-                                    <ul key={index}>
-                                        <li>{e}</li>
-                                    </ul>
-                                )
-                            })}
-                        </div>
                     </div>
-
                 </div>
             }
         </div>

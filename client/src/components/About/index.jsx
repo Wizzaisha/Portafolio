@@ -14,7 +14,7 @@ function About () {
                     <img src="https://avatars.githubusercontent.com/u/86801763?v=4" alt="img" className="picture" />
                     <div>
                         <h3 className="miniTitle">Detalles sobre mi</h3>
-                        <p>
+                        <p className="detailsAbout">
                             Soy Ingeniero Ambiental y Desarrollador Full Stack; me apasiona el 
                             mundo de la tecnología, la programación y aprender cosas nuevas. 
                             Tengo experencia como Freelancer en el área de educación no formal; 

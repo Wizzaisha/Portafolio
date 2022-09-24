@@ -7,20 +7,23 @@ function Header() {
 
     return (
         <div className="container-fluid headerContainer">
-            <div className="row">
-                <div className="col col-mg-6 titleContainer">
+            <div className="navAndTitleContainer">
+                <div className="titleContainer">
                     <div>
                         <h1 className="mainTitle">Ever Ramirez Mahecha</h1>
                         <p className="subTitle">Ingeniero Ambiental 🌿 & Desarrollador Full Stack 💻</p>
                     </div>
                 </div>
-                <div className="col col-mg-6 navBarContainer">
-                    <ul className="navBar">
-                    <li><Link to="/" className={`linkNavBar radiusLeft ${location.pathname === "/" ? "active" : "" }`} >Home</Link></li>
-                        <li><Link to="/about" className={`linkNavBar ${location.pathname === "/about" ? "active" : "" }`} >About</Link></li>
-                        <li><Link to="/projects" className={`linkNavBar ${location.pathname === "/projects" ? "active" : "" }`} >Projects</Link></li>
-                        <li><Link to="/contact" className={`linkNavBar radiusRight ${location.pathname === "/contact" ? "active" : "" }`} >Contact</Link></li>
-                    </ul>
+                <div className="navBarContainer">
+                    <div className="navBar">
+                        <ul>
+                            <Link to="/" className="linksNav"><li className={`linkNavBar radiusLeft ${location.pathname === "/" ? "active" : "" }`}>Inicio</li></Link>
+                            <Link to="/about" className="linksNav"><li className={`linkNavBar ${location.pathname === "/about" ? "active" : "" }`}>Sobre mi</li></Link>
+                            <Link to="/projects" className="linksNav"><li className={`linkNavBar ${location.pathname === "/projects" ? "active" : "" }`}>Proyectos</li></Link>
+                            <Link to="/contact" className="linksNav"><li className={`linkNavBar radiusRight ${location.pathname === "/contact" ? "active" : "" }`}>Contacto</li></Link>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
 

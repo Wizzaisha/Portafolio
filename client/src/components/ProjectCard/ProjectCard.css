@@ -1,21 +1,24 @@
 .projectCard {
-  border: 1px solid black;
+  border: 2px solid white;
   border-radius: 10px;
+  background-color: #59ce901a;
 }
 
 .carHeader {
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid white;
   padding: 1rem;
   margin: 0;
 }
 
 .imagesAndFunctionalities {
   text-align: left;
+  margin: 0;
+  padding: 0;
 }
 
 .functionalitiesAndLinks {
-  border-right: 1px solid black;
-  padding: 1rem;
+  border-right: 2px solid white;
+  padding: 2rem;
 }
 
 .functionalities h5 {
@@ -24,17 +27,80 @@
 }
 
 .projectImgsContainer {
-  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+
+.slidesContainer {
+  border-bottom: 2px solid white;
 }
 
 .interestLinks {
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 30px;
+  text-align: center;
 }
 
 .listFunct {
   padding: 0.1rem 1rem;
   margin: 0;
   font-size: 15px;
+}
+
+.linksIcons {
+  width: 80px;
+  height: 80px;
+}
+
+.linksIcons:hover {
+  color: #59ce8f;
+}
+
+.techAndTools {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.toolsContainer,
+.techContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.extraDiv {
+  padding: 1rem;
+}
+
+.icons {
+  width: 70px;
+  height: 70px;
+}
+
+.toolsContainer ul {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.techContainer ul {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 650px) {
+  .functionalitiesAndLinks {
+    border: 0;
+  }
 }

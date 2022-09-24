@@ -1,4 +1,4 @@
-.navBar {
+.navBar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -7,6 +7,15 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.navAndTitleContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .headerContainer {
@@ -48,16 +57,21 @@
 }
 
 .linkNavBar {
-  width: 130px;
-  background-color: #59ce8f;
-}
-
-.linkNavBar {
   display: block;
   text-align: center;
   padding: 14px 16px;
+  width: 130px;
+  background-color: #59ce8f;
+  cursor: pointer;
+}
+
+.linksNav {
   text-decoration: none;
   color: white;
+}
+
+.linksNav:hover {
+  color: inherit;
 }
 
 .linkNavBar:hover:not(.active) {
@@ -71,4 +85,30 @@
 
 .active {
   background-color: black;
+}
+
+@media screen and (max-width: 1110px) {
+  .navAndTitleContainer {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .radiusLeft {
+    border-radius: 0;
+  }
+
+  .radiusRight {
+    border-radius: 0;
+  }
+  .navBarContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+  }
+  .linkNavBar {
+    width: 100%;
+  }
 }

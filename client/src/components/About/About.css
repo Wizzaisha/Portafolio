@@ -22,6 +22,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 30px;
+  flex-wrap: wrap;
 }
 
 .container-fluid {
@@ -58,12 +59,17 @@
   gap: 1rem;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .picture {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+}
+
+.detailsAbout {
+  width: 600px;
 }
 
 .skills {
@@ -88,4 +94,16 @@
   border-radius: 10px;
   padding: 1rem;
   margin: 0;
+}
+
+@media screen and (max-width: 1300px) {
+  .presentation {
+    padding: 1rem 5rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .detailsAbout {
+    width: 100%;
+  }
 }

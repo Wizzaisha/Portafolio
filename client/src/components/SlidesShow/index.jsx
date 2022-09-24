@@ -37,34 +37,34 @@ function SlidesShow ({images}) {
         if (galleryRange[3] !== images.length - 1) setGalleryRange(galleryRange.map(e => e + 1));
     }
 
-    console.log(galleryRange);
-
     return (
-        <div className="container">
-
-            <div className="containerSlides">
-                <div className="leftArrow" onClick={goToPrevious}>❮</div>
-                <div className="righttArrow" onClick={goToNext}>❯</div>
-                <div>
-                    <img src={images[currentIndex]} alt="img" className="slideImg d-block w-100"></img>
-                </div>
-            </div>
-
-
-
-            <div className="dotsContainer">
-                <div className="leftArrowGallery" onClick={goGalleryPrev}>❮</div>
-                <div className="righttArrowGallery" onClick={goGalleryNext}>❯</div>
-                {galleryRange.map(i => {
-                    return (
-                        <div key={i} onClick={() => goToSlide(i)}>
-                            <img src={images[i]} alt="img" className="galleryImg"></img>
-                        </div>
-                    )
-                })}
-            </div>
         
+        <div className="container slidesGallery">
+            {images && 
+                <div>
+                    <div className="containerSlides">
+                        <div className="leftArrow" onClick={goToPrevious}>❮</div>
+                        <div className="righttArrow" onClick={goToNext}>❯</div>
+                        <div>
+                            <img src={images[currentIndex]} alt="img" className="slideImg d-block w-100"></img>
+                        </div>
+                    </div>
+
+                    <div className="dotsContainer">
+                        <div className={`leftArrowGallery ${galleryRange[0] === 0 ? "activeDisable" : ""}`} onClick={goGalleryPrev}>❮</div>
+                        <div className={`righttArrowGallery ${galleryRange[3] === images.length - 1 ? "activeDisable" : ""}`} onClick={goGalleryNext}>❯</div>
+                        {galleryRange.map(i => {
+                            return (
+                                <div key={i} onClick={() => goToSlide(i)}>
+                                    <img src={images[i]} alt="img" className="galleryImg"></img>
+                                </div>
+                            )
+                        })}
+                    </div>
+                </div>
+            }
         </div>
+        
     )
 }
 
