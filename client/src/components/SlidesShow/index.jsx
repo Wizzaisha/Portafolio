@@ -11,7 +11,7 @@ function SlidesShow ({images}) {
     function goToPrevious() {
         const isFirstSlide = currentIndex === 0;
 
-        const newIndex = isFirstSlide ? images.length - 1 : currentIndex - 1;
+        const newIndex = isFirstSlide ? images.length -  1 : currentIndex - 1;
 
         setCurrentIndex(newIndex);
     }

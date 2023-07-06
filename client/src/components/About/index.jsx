@@ -41,6 +41,7 @@ function About () {
                     <div className="skillContainer">
                         <h5>Desarrollo Frontend</h5>
                         <div className="imgContainer">
+                            <p><a href="https://angular.io/" target="_blank" rel="noopener noreferrer"><img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/21_Angular_logo_logos-512.png" alt="angular" className="skillsImg"/></a></p>
                             <p><a href="https://getbootstrap.com" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" className="skillsImg"/></a></p>
                             <p><a href="https://www.w3schools.com/css/" target="_blank" rel="noopener noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" className="skillsImg"/></a></p>
                             <p><a href="https://www.w3.org/html/" target="_blank" rel="noopener noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" className="skillsImg"/></a></p>
@@ -68,6 +69,7 @@ function About () {
                     <div className="skillContainer">
                         <h5>Tecnologías en proceso de aprendizaje</h5>
                         <div className="imgContainer">
+                            <p><a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer"><img src="https://www.svgrepo.com/show/354113/nextjs-icon.svg" alt="nextjs" className="skillsImg"/></a></p>
                             <p><a href="https://www.djangoproject.com/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" className="skillsImg"/></a></p>
                             <p><a href="https://vuejs.org/" target="_blank" rel="noopener noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" alt="vuejs" className="skillsImg"/> </a></p>
                         </div>
@@ -75,6 +77,7 @@ function About () {
                     <div className="skillContainer">
                         <h5>Otras</h5>
                         <div className="imgContainer">
+                            <p><a href="https://www.atlassian.com/es/software/jira" target="_blank" rel="noopener noreferrer"><img src="https://logowik.com/content/uploads/images/jira3124.jpg" alt="github" className="skillsImg"/></a></p>
                             <p><a href="https://github.com/" target="_blank" rel="noopener noreferrer"><img src="/assets/images/GitHub-Mark-120px-plus.png" alt="github" className="skillsImg"/></a></p>
                             <p>Metodología agile SCRUM</p>
                         </div>
